@@ -6,4 +6,19 @@
     <string name="actions">Actions....</string>
     <string name="answer_me">Get All</string>
     <string name="send_object">Logout</string>
+
+    <string name="ver_horarios">Ver horarios</string>
+    <string name="reuniones">Reuniones</string>
+
+    <string name="lunes">LUNES</string>
+    <string name="martes">MARTES</string>
+    <string name="miercoles">MIERCOLES</string>
+    <string name="jueves">JUEVES</string>
+    <string name="viernes">VIERNES</string>
+    <string name="hora1">Hora 1</string>
+    <string name="hora2">Hora 2</string>
+    <string name="hora3">Hora 3</string>
+    <string name="hora4">Hora 4</string>
+    <string name="hora5">Hora 5</string>
+    <string name="hora6">Hora 6</string>
 </resources>
