@@ -7,14 +7,14 @@ package com.elorrieta.alumnoclient.entity
     private val pass: String, private val edad: Int)*/
 
 data class Alumno(
-    private var idAlumno: Int,
-    private var email: String? = null,
-    private var contrasenna: Int,
-    private var dni: String,
-    private var nombre: String,
-    private var apellidos: String,
-    private var direccion: String? = null,
-    private var telefono1: String,
-    private var telefono2: String? = null,
-    private var foto: ByteArray? = null
+    private val idAlumno: Int,
+    private val email: String? = null,
+    private val contrasenna: Int,
+    private val dni: String,
+    private val nombre: String,
+    private val apellidos: String,
+    private val direccion: String? = null,
+    private val telefono1: String,
+    private val telefono2: String? = null,
+    private val foto: ByteArray? = null
 )

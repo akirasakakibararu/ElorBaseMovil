@@ -11,4 +11,10 @@ enum class Events(val value: String) {
     ON_LOGIN_ANSWER ("onLoginAnswer"),
     ON_GET_ALL_ANSWER ("onGetAllAnswer"),
     OBTENER_ASIGNATURAS ("obtenerAsignaturas"),
+
+    GET_HORARIO_SEMANAL_PROFESOR ("getHorarioSemanalProfesor"),
+    GET_HORARIO_SEMANAL_PROFESOR_ANSWER ("getHorarioSemanalProfesorAnswer"),
+    GET_REUNION ("getReunion"),
+    GET_HORARIO_SEMANAL_ALUMNO ("getHorarioSemanalAlumno"),
+    GET_ALL_OFERTA_CURSOS ("getAllOfertaCursos"),
 }
