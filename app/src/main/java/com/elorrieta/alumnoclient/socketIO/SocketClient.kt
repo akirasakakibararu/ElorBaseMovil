@@ -6,6 +6,7 @@ import android.widget.TextView
 import com.elorrieta.alumnoclient.R
 import com.elorrieta.alumnoclient.entity.Alumno
 import com.elorrieta.alumnoclient.entity.Asignatura
+import com.elorrieta.alumnoclient.entity.Horario
 import com.elorrieta.alumnoclient.socketIO.model.MessageInput
 import com.elorrieta.socketsio.sockets.config.Events
 import com.google.gson.Gson
@@ -41,20 +42,7 @@ class SocketClient (private val activity: Activity) {
             Log.d(tag, "Disconnected...")
         }
 
-        socket.on(Events.OBTENER_ASIGNATURAS.value) { args ->
-            try {
-                val response = args[0] as JSONObject
-                val message = response.getString("message")
-                val gson = Gson()
-                val listType = object : TypeToken<List<Asignatura>>() {}.type
-                val asignaturas = gson.fromJson<List<Asignatura>>(message, listType)
-                asignaturas.forEach { asignatura ->
-                    activity.findViewById<TextView>(R.id.textView).append("\nAsignatura: ${asignatura.nombre}")
-                }
-            } catch (e: Exception) {
-                Log.e(tag, "Error parsing response: ${e.message}")
-            }
-        }
+
 
         // Event called when the socket gets an answer from a login attempt.
         // We get the message and print it. Note: this event is called after
@@ -170,5 +158,12 @@ class SocketClient (private val activity: Activity) {
 
         activity.findViewById<TextView>(R.id.textView).append("\nAttempt of obtenerAsignaturas...")
         Log.d (tag, "Attempt of obtenerAsignaturas...")
+    }
+
+    fun obtenerHorarioProfesor() {
+        socket.emit(Events.GET_HORARIO_SEMANAL_PROFESOR.value)
+
+        activity.findViewById<TextView>(R.id.textView).append("\nAttempt of obtenerHorario...")
+        Log.d (tag, "Attempt of obtenerHorario...")
     }
 }

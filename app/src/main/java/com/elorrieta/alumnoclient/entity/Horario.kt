@@ -1,9 +1,9 @@
 package com.elorrieta.alumnoclient.entity
 
 data class Horario(
-    private val idHorario: Int? = null,
-    private val hora: Int,
-    private val dia: String,
-    private val aula: Int? = null,
-    private val idAsignatura: String
+    val idHorario: Int? = null,
+    val hora: Int,
+    val dia: String,
+    val aula: Int? = null,
+    val idAsignatura: String
 )

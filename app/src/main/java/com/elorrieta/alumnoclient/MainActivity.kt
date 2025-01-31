@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.buttonGetAll)
             .setOnClickListener {
-                socketClient!!.obtenerAsignaturas()
+                socketClient!!.obtenerHorarioProfesor()
                 Thread.sleep(3000) // A little delay...
             }
 

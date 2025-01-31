@@ -22,6 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/horario"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="108dp" />
@@ -41,17 +43,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/formato_boton"
-        android:text="@string/reuniones"
+        android:text="@string/ver_reuniones"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteX="229dp"
         tools:layout_editor_absoluteY="632dp" />
 
     <TableLayout
-        android:layout_width="368dp"
+        android:layout_width="361dp"
         android:layout_height="364dp"
+        android:background="@drawable/table_border"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="173dp">
+        tools:layout_editor_absoluteY="186dp">
 
         <!-- Fila 1 -->
         <TableRow
@@ -62,49 +65,61 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#008aab"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="HORA" />
+                android:text="HORA"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#008aab"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="@string/lunes" />
+                android:text="@string/lunes"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#008aab"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="@string/martes" />
+                android:text="@string/martes"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#008aab"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="@string/miercoles" />
+                android:text="@string/miercoles"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#008aab"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="@string/jueves" />
+                android:text="@string/jueves"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#008aab"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="@string/viernes" />
+                android:text="@string/viernes"
+                android:textColor="@color/white" />
         </TableRow>
 
         <!-- Fila 2 -->
@@ -116,9 +131,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#3cb4e5"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="@string/hora1" />
+                android:text="@string/hora1"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="0dp"
@@ -170,9 +187,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#3cb4e5"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="@string/hora2" />
+                android:text="@string/hora2"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="0dp"
@@ -224,9 +243,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#3cb4e5"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="@string/hora3" />
+                android:text="@string/hora3"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="0dp"
@@ -278,9 +299,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#3cb4e5"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="@string/hora4" />
+                android:text="@string/hora4"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="0dp"
@@ -332,9 +355,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#3cb4e5"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="@string/hora5" />
+                android:text="@string/hora5"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="0dp"
@@ -386,9 +411,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#3cb4e5"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="@string/hora6" />
+                android:text="@string/hora6"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="0dp"
@@ -432,5 +459,14 @@
         </TableRow>
 
     </TableLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        tools:layout_editor_absoluteY="25dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
